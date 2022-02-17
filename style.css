@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+:root{
+    --background-light: #fff;
+    --background-dark: #111;
+    --text-dark: #fff;
+    --text-light: #333;
+    --card-bg: rgba(78, 78, 78, 0.137); 
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: var(--text-dark);
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: var(--background-dark);
+    color: var(--text-dark);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 10vw;
+    gap: 2.5rem;
+    padding: 3rem 0;
+}
+.section-a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-a__writeup{
+    margin-right: 9rem;
+}
+
+.section-a__writeup h1{
+    font-size: calc(2.4rem + 2.5vw)
+}
+.section-a__writeup p{
+    margin: 2rem 0;
+}
+.section-a__link{
+    margin: 5rem 0;
+}
+.section-a__link ul{
+    list-style-type: none;
+}
+.section-a__link ul li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    text-transform: uppercase;
+}
+.section-a__link span{
+    width: 3rem;
+    background-color: var(--background-light);
+    height: 0.2rem;
+    display: inline-block;
+}
+.active span{
+    width: 5rem;
+}
+.socials{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+.socials-item{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+
+}
+
+.section-b{
+
+}
+
+.card{
+    background: var(--card-bg);
+    height: 15rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.project-lang{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.project-description{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    main{
+        grid-template-columns: 1fr;
+        margin: 2rem;
+    }
+    .section-a__writeup{
+        margin: 0;
+    }
+}
